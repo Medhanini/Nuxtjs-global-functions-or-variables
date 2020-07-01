@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>
+      <ExampleComponent/>
       <Logo />
       <h1 class="title">
         Nuxtjs-global-functions-or-variables
@@ -28,7 +29,13 @@
 </template>
 
 <script>
-export default {}
+import ExampleComponent from '~/components/example-component'
+export default {
+  name:'index',
+  components:{
+    ExampleComponent
+  }
+}
 </script>
 
 <style>
